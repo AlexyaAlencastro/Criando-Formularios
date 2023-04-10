@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Formulário</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body class="container">
+  <header>
+    <h1>
+      Mentoria
+    </h1>
+    <p>
+      Preencha o formulário abaixo para <br> agendar a sua mentoria
+    </p>
+  </header>
+
+  <form title="Formulário de agendamento de mentoria">
+    <div class="caixa-branca">
+      <h2 role="heading">Informações pessoais</h2>
+      <hr alt="Linha decorativa">
+
+
+      <label for="firstname">Nome</label>
+      <label class="sobrenome" for="lastname">Sobrenome</label>
+      <div class="col-2">
+        <input class="input-1" type="text" id="firstname">
+        <input class="input-1" type="text" id="lastname">
+      </div>
+
+
+      <div>
+        <label for="email">Email <span>(digite um email válido)</span></label>
+        <input class="input-2" type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="password">Senha<span>(mínimo de 6 caracteres)</span></label>
+        <input class="input-2" type="password" id="password" name="password" required>
+      </div>
+
+
+      <h2>Informações do mentor</h2>
+      <hr alt="Linha decorativa">
+
+
+      <div>
+        <label for="mentorname">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+        <input class="input-2" type="text" id="mentorname" name="mentorname">
+      </div>
+
+
+      <h2 role="heading">Seus horários disponíveis</h2>
+
+      <hr alt="Linha decorativa">
+
+
+      <h3 role="heading">Primeira mentoria</h3>
+
+      <div class="col-2">
+
+        <div> <label for="date1">Data <span>(DD/MM/AAAA)</span></label>
+          <input class="input-1" type="date" id="date1" name="date1" required>
+        </div>
+
+        <div> <label class="das" for="time1_start">Das</label>
+          <input class="input-3" type="time">
+        </div>
+
+        <div> <label class="ate" for="">Até</label>
+          <input class="input-3" type="time" id="time">
+        </div>
+
+      </div>
+
+      <h3 role="heading">Segunda mentoria</h3>
+
+      <div class="col-2">
+
+        <div> <label for="date2">Data <span>(DD/MM/AAAA)</span></label>
+          <input class="input-1" type="date" id="date1" name="date2" required>
+        </div>
+
+        <div> <label class="das" for="time1_start">Das</label>
+          <input class="input-3" type="time">
+        </div>
+
+        <div> <label class="ate" for="">Até</label>
+          <input class="input-3" type="time" id="time">
+        </div>
+
+      </div>
+    </div>
+    <footer>
+      <label for="submit-button">Salvar o formulário</label>
+      <button id="submit-button">Salvar</button>
+    </footer>
+  </form>
+
+</body>
+
+</html>
